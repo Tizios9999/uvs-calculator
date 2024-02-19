@@ -2,6 +2,7 @@
   <button
     (click)="
       appStateService.selectPlayer(this.player);
+      appStateService.resetAttack();
       appStateService.setCurrentPage('AttackPhase')
     "
     class="life-btn"

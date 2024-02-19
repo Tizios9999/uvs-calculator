@@ -1,0 +1,9 @@
+
+.zone-icon {
+  height: 150px;
+  width: 165px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra orizzontalmente */
+}

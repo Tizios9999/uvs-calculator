@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { PlayerData } from '../player-data';
+import { AppStateService } from '../app-state.service';
 
 @Component({
   selector: 'app-counters-small',
@@ -8,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './counters-small.component.css'
 })
 export class CountersSmallComponent {
+  constructor(public appStateService: AppStateService) {}
 
+    @Input() player: PlayerData = new PlayerData(25, 0, 'green');
 }

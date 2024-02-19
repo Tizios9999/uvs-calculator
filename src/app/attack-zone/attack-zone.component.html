@@ -1,1 +1,9 @@
 <p>attack-zone works!</p>
+<div
+  class="zone-icon"
+  [style.background]="
+    'url(assets/zone-' + appStateService.currentAttack.zone + '.png) no-repeat'
+  "
+>
+  {{ appStateService.currentAttack.speed }}
+</div>
