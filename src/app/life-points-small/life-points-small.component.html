@@ -1,0 +1,24 @@
+<div>
+  <button
+    class="plus-minus-btn plus"
+    (click)="appStateService.updatePropertyValue(this.player, 'life', 1)"
+    [style.backgroundColor]="player.backgroundColor"
+  >
+    +
+  </button>
+  <div
+    [ngClass]="{
+      selected: player == appStateService.selectedPlayer
+    }"
+    (click)="appStateService.selectPlayer(player)"
+  >
+    {{ player.life }}
+  </div>
+  <button
+    class="plus-minus-btn minus"
+    (click)="appStateService.updatePropertyValue(this.player, 'life', -1)"
+    [style.backgroundColor]="player.backgroundColor"
+  >
+    -
+  </button>
+</div>

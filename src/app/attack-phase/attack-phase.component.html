@@ -1,0 +1,10 @@
+<p>attack-phase works!</p>
+<h1>{{ appStateService.selectedPlayer.backgroundColor }}</h1>
+<app-life-points-small
+  [style.color]="appStateService.myData.backgroundColor"
+  [player]="appStateService.myData"
+></app-life-points-small>
+<app-life-points-small
+  [style.color]="appStateService.rivalData.backgroundColor"
+  [player]="appStateService.rivalData"
+></app-life-points-small>

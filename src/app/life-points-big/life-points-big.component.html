@@ -1,0 +1,27 @@
+<div class="life-ctr">
+  <button
+    (click)="
+      appStateService.selectPlayer(this.player);
+      appStateService.setCurrentPage('AttackPhase')
+    "
+    class="life-btn"
+    color="primary"
+    [style.backgroundColor]="player.backgroundColor"
+  >
+    {{ this.player.life }}
+  </button>
+  <button
+    class="plus-minus-btn plus"
+    (click)="appStateService.updatePropertyValue(this.player, 'life', 1)"
+    [style.backgroundColor]="player.backgroundColor"
+  >
+    +
+  </button>
+  <button
+    class="plus-minus-btn minus"
+    (click)="appStateService.updatePropertyValue(this.player, 'life', -1)"
+    [style.backgroundColor]="player.backgroundColor"
+  >
+    -
+  </button>
+</div>

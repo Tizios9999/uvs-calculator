@@ -1,0 +1,18 @@
+.life-ctr {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "life-btn plus"
+    "life-btn minus";
+}
+
+button {
+  color: white;
+}
+
+.life-btn { grid-area: life-btn; }
+.plus { grid-area: plus; }
+.minus { grid-area: minus; }
