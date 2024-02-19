@@ -56,7 +56,7 @@ export class AppStateService {
   }
 
   resetAttack() {
-    this.currentAttack.zone = 'mid';
+    this.currentAttack.zone = 'high';
     this.currentAttack.speed = 4;
     this.currentAttack.damage = 4;
   }

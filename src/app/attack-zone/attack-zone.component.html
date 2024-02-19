@@ -1,9 +1,37 @@
 <p>attack-zone works!</p>
-<div
-  class="zone-icon"
-  [style.background]="
-    'url(assets/zone-' + appStateService.currentAttack.zone + '.png) no-repeat'
-  "
->
-  {{ appStateService.currentAttack.speed }}
-</div>
+<section class="attack-zone-section">
+  <div
+    class="zone-icon"
+    [style.background]="
+      'url(assets/zone-' +
+      appStateService.currentAttack.zone +
+      '.png) no-repeat'
+    "
+  >
+    {{ appStateService.currentAttack.speed }}
+  </div>
+  <div class="zone-select-group">
+    <div
+      class="zone-select zone-high"
+      [ngClass]="{
+        selected: appStateService.currentAttack.zone === 'high'
+      }"
+      (click)="appStateService.setAttackZone('high')"
+    ></div>
+    <div
+      class="zone-select zone-mid"
+      [ngClass]="{
+        selected: appStateService.currentAttack.zone === 'mid'
+      }"
+      (click)="appStateService.setAttackZone('mid')"
+    ></div>
+    <div
+      class="zone-select zone-low"
+      [ngClass]="{
+        selected: appStateService.currentAttack.zone === 'low'
+      }"
+      (click)="appStateService.setAttackZone('low')"
+    ></div>
+  </div>
+  <app-plus-minus-atk-btn-group property="speed"></app-plus-minus-atk-btn-group>
+</section>

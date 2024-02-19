@@ -1,3 +1,7 @@
+.attack-zone-section {
+  display: flex;
+  justify-content: space-between;
+}
 
 .zone-icon {
   height: 150px;
@@ -5,5 +9,34 @@
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra orizzontalmente */
+  justify-content: center;
 }
+
+.zone-select-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.zone-select {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.zone-mid {
+  background-color: #ff914d;
+}
+
+.zone-low {
+  background-color: #ffde59;
+}
+
+.zone-high {
+  background-color: #ff5757;
+}
+
+.selected {
+  border: 1px solid white;
+}
+
+

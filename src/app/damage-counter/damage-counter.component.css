@@ -1,0 +1,13 @@
+.damage-zone-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.damage-icon {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

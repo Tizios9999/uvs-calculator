@@ -1,1 +1,11 @@
-<p>damage-counter works!</p>
+<section class="damage-zone-section">
+  <div
+    class="damage-icon"
+    [style.background]="'url(assets/damage-counter.png) no-repeat'"
+  >
+    {{ appStateService.currentAttack.damage }}
+  </div>
+  <app-plus-minus-atk-btn-group
+    property="damage"
+  ></app-plus-minus-atk-btn-group>
+</section>
