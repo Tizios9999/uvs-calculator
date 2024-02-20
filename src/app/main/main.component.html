@@ -1,9 +1,12 @@
-<p>main works!</p>
 <div>
   <app-counters-main [player]="appStateService.myData"></app-counters-main>
   <app-options-button [player]="appStateService.myData"></app-options-button>
 </div>
 <app-life-points-big [player]="appStateService.myData"></app-life-points-big>
+<section class="mid-section">
+  <app-dice></app-dice>
+  <app-reset-game></app-reset-game>
+</section>
 <div>
   <app-counters-main [player]="appStateService.rivalData"></app-counters-main>
   <app-options-button [player]="appStateService.rivalData"></app-options-button>

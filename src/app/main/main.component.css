@@ -1,0 +1,9 @@
+.mid-section {
+  display: flex;
+  height: 60px;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 20px;
+}

@@ -3,7 +3,9 @@
     class="damage-icon"
     [style.background]="'url(assets/damage-counter.png) no-repeat'"
   >
-    {{ appStateService.currentAttack.damage }}
+    <div class="stroke-text spd-atk-number atk-number">
+      {{ appStateService.currentAttack.damage }}
+    </div>
   </div>
   <app-plus-minus-atk-btn-group
     property="damage"

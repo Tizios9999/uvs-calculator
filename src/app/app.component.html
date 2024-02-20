@@ -10,9 +10,9 @@
 <style></style>
 
 <main class="main">
-  <button (click)="setPage('Main')">Main</button>
+  <!-- <button (click)="setPage('Main')">Main</button>
   <button (click)="setPage('Options')">Options</button>
-  <button (click)="setPage('AttackPhase')">Attack Phase</button>
+  <button (click)="setPage('AttackPhase')">Attack Phase</button> -->
 
   <app-options *ngIf="appStateService.currentPage === 'Options'"></app-options>
   <app-main *ngIf="appStateService.currentPage === 'Main'"></app-main>
