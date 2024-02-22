@@ -1,10 +1,14 @@
 <button
+  [style.backgroundColor]="this.player.backgroundColor"
   (click)="appStateService.updatePropertyValue(this.player, 'counter', -1)"
 >
   -
 </button>
-<button>{{ this.player.counter }}</button>
+<button [style.backgroundColor]="this.player.backgroundColor">
+  {{ this.player.counter }}
+</button>
 <button
+  [style.backgroundColor]="this.player.backgroundColor"
   (click)="appStateService.updatePropertyValue(this.player, 'counter', 1)"
 >
   +

@@ -6,6 +6,23 @@
 
 .player-top-section {
   flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.app-counters-main {
+  width: 75%;
+  display: flex;
+  height: 100%;
+}
+
+.app-options-button {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-life-points-big {
