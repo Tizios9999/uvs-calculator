@@ -13,7 +13,7 @@ export class DiceComponent {
 
   rollDice() {
 
-    this.diceNumber = Math.floor(Math.random() * 6) + 1;
+    this.diceNumber = Math.floor(Math.random() * 99) + 1;
 
   }
 
