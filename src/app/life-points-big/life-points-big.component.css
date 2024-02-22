@@ -1,7 +1,7 @@
 .life-ctr {
-  height: 200px;
+  height: 100%;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -11,6 +11,12 @@
 
 button {
   color: white;
+  font-size: 64px;
+  text-shadow:
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
 }
 
 .life-btn { grid-area: life-btn; }

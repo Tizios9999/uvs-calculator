@@ -14,9 +14,16 @@
   <button (click)="setPage('Options')">Options</button>
   <button (click)="setPage('AttackPhase')">Attack Phase</button> -->
 
-  <app-options *ngIf="appStateService.currentPage === 'Options'"></app-options>
-  <app-main *ngIf="appStateService.currentPage === 'Main'"></app-main>
+  <app-options
+    class="app-options"
+    *ngIf="appStateService.currentPage === 'Options'"
+  ></app-options>
+  <app-main
+    class="app-main"
+    *ngIf="appStateService.currentPage === 'Main'"
+  ></app-main>
   <app-attack-phase
+    class="app-attack-phase"
     *ngIf="appStateService.currentPage === 'AttackPhase'"
   ></app-attack-phase>
 </main>
