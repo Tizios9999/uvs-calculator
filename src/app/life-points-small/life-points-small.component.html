@@ -1,24 +1,25 @@
-<div>
-  <button
-    class="plus-minus-btn plus"
-    (click)="appStateService.updatePropertyValue(this.player, 'life', 1)"
-    [style.backgroundColor]="player.backgroundColor"
-  >
-    +
-  </button>
+<div
+  class="life-points-container"
+  [ngClass]="{
+    selected: player == appStateService.selectedPlayer,
+    'not-selected': player !== appStateService.selectedPlayer
+  }"
+>
   <div
-    [ngClass]="{
-      selected: player == appStateService.selectedPlayer
-    }"
-    (click)="appStateService.selectPlayer(player)"
-  >
-    {{ player.life }}
-  </div>
-  <button
     class="plus-minus-btn minus"
     (click)="appStateService.updatePropertyValue(this.player, 'life', -1)"
-    [style.backgroundColor]="player.backgroundColor"
   >
     -
-  </button>
+  </div>
+
+  <div class="player-label" (click)="appStateService.selectPlayer(player)">
+    <div>{{ this.label }}</div>
+    <div>{{ player.life }}</div>
+  </div>
+  <div
+    class="plus-minus-btn plus"
+    (click)="appStateService.updatePropertyValue(this.player, 'life', 1)"
+  >
+    +
+  </div>
 </div>

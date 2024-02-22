@@ -1,0 +1,24 @@
+.counter-container {
+  display: flex;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  height: 100%;
+  border: 1px solid white;
+  justify-content: space-between;
+}
+
+.minus-plus-btn {
+  flex: 1; /* Ogni bottone occupa lo stesso spazio flessibile */
+  text-align: center; /* Allinea il testo al centro */
+  cursor: pointer; /* Mostra il cursore come puntatore */
+  padding: 10px; /* Aggiungi un po' di spazio intorno ai bottoni */
+  border: 1px solid #ccc; /* Aggiungi un bordo grigio */
+}
+
+.counter-number {
+  flex: 1; /* Il numero occupa lo stesso spazio flessibile */
+  text-align: center; /* Allinea il testo al centro */
+  padding: 10px; /* Aggiungi un po' di spazio intorno al numero */
+  border: 1px solid #ccc; /* Aggiungi un bordo grigio */
+}

@@ -15,4 +15,6 @@ export class LifePointsSmallComponent {
   constructor(public appStateService: AppStateService) {}
 
   @Input() player: PlayerData = new PlayerData(25, 0, 'green');
+
+  @Input() label: string = "player";
 }

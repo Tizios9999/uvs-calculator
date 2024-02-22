@@ -1,11 +1,15 @@
-<button
-  (click)="appStateService.updatePropertyValue(this.player, 'counter', -1)"
->
-  -
-</button>
-<button>{{ this.player.counter }}</button>
-<button
-  (click)="appStateService.updatePropertyValue(this.player, 'counter', 1)"
->
-  +
-</button>
+<div class="counter-container">
+  <div
+    class="minus-plus-btn"
+    (click)="appStateService.updatePropertyValue(this.player, 'counter', -1)"
+  >
+    -
+  </div>
+  <div class="counter-number">{{ this.player.counter }}</div>
+  <div
+    class="minus-plus-btn"
+    (click)="appStateService.updatePropertyValue(this.player, 'counter', 1)"
+  >
+    +
+  </div>
+</div>

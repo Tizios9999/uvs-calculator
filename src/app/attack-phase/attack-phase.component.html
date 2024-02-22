@@ -1,24 +1,37 @@
-<h1>{{ appStateService.selectedPlayer.backgroundColor }}</h1>
-<app-counters-small
-  [style.color]="appStateService.myData.backgroundColor"
-  [player]="appStateService.myData"
-></app-counters-small>
-<app-counters-small
-  [style.color]="appStateService.rivalData.backgroundColor"
-  [player]="appStateService.rivalData"
-></app-counters-small>
-<app-life-points-small
-  [style.color]="appStateService.myData.backgroundColor"
-  [player]="appStateService.myData"
-></app-life-points-small>
-<app-life-points-small
-  [style.color]="appStateService.rivalData.backgroundColor"
-  [player]="appStateService.rivalData"
-></app-life-points-small>
-<app-attack-zone></app-attack-zone>
-<app-damage-counter></app-damage-counter>
-<div>
-  <app-block-btn block="unblocked" label="Unblocked"></app-block-btn>
-  <app-block-btn block="half" label="Half block"></app-block-btn>
-  <app-block-btn block="full" label="Full block"></app-block-btn>
-</div>
+<section class="attack-page-container">
+  <section class="counters-container">
+    <app-counters-small
+      class="app-counters-small"
+      [style.backgroundColor]="appStateService.rivalData.backgroundColor"
+      [player]="appStateService.rivalData"
+    ></app-counters-small>
+    <app-counters-small
+      class="app-counters-small"
+      [style.backgroundColor]="appStateService.myData.backgroundColor"
+      [player]="appStateService.myData"
+    ></app-counters-small>
+  </section>
+  <section class="life-points-section">
+    <app-life-points-small
+      class="app-life-points-small"
+      [style.backgroundColor]="appStateService.rivalData.backgroundColor"
+      [player]="appStateService.rivalData"
+      label="Rival"
+    ></app-life-points-small>
+    <app-life-points-small
+      class="app-life-points-small"
+      [style.BackgroundColor]="appStateService.myData.backgroundColor"
+      [player]="appStateService.myData"
+      label="Me"
+    ></app-life-points-small>
+  </section>
+  <section class="attack-info-container">
+    <app-attack-zone></app-attack-zone>
+    <app-damage-counter></app-damage-counter>
+  </section>
+  <section class="block-btn-group">
+    <app-block-btn block="unblocked" label="Unblocked"></app-block-btn>
+    <app-block-btn block="half" label="Half block"></app-block-btn>
+    <app-block-btn block="full" label="Full block"></app-block-btn>
+  </section>
+</section>

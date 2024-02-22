@@ -17,4 +17,5 @@ import { AppStateService } from '../app-state.service';
 })
 export class AttackPhaseComponent {
   constructor(public appStateService: AppStateService) {}
+
 }

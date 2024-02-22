@@ -1,0 +1,43 @@
+.attack-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.counters-container {
+  flex: 1;
+  display: flex;
+  width: 100%; /* Ogni componente occupa il 50% della larghezza */
+  box-sizing: border-box; /* Include il padding e il bordo nella larghezza definita */
+}
+
+.app-counters-small {
+  width: 50%;
+}
+
+.life-points-section {
+  flex: 2;
+  display: flex;
+  width: 100%; /* Ogni componente occupa il 50% della larghezza */
+  box-sizing: border-box; /* Include il padding e il bordo nella larghezza definita */
+}
+
+.app-life-points-small {
+  width: 50%;
+}
+
+.attack-info-container {
+  flex: 12;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.block-btn-group {
+  flex: 2;
+}
+
+section {
+  border: 1px solid aqua;
+}
