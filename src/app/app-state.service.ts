@@ -12,8 +12,8 @@ export class AppStateService {
   myStartingLife: number = 25;
   rivalStartingLife: number = 25;
 
-  myData: PlayerData = new PlayerData(this.myStartingLife, 0, 'red');
-  rivalData: PlayerData = new PlayerData(this.rivalStartingLife, 0, 'blue');
+  myData: PlayerData = new PlayerData(this.myStartingLife, 0, 'blue');
+  rivalData: PlayerData = new PlayerData(this.rivalStartingLife, 0, 'red');
 
   selectedPlayer: PlayerData = this.myData;
 

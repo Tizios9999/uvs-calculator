@@ -2,24 +2,6 @@
   <section class="player-top-section">
     <app-counters-main
       class="app-counters-main"
-      [player]="appStateService.myData"
-    ></app-counters-main>
-    <app-options-button
-      class="app-options-button"
-      [player]="appStateService.myData"
-    ></app-options-button>
-  </section>
-  <app-life-points-big
-    class="app-life-points-big"
-    [player]="appStateService.myData"
-  ></app-life-points-big>
-  <section class="mid-section">
-    <app-dice></app-dice>
-    <app-reset-game></app-reset-game>
-  </section>
-  <section class="player-top-section">
-    <app-counters-main
-      class="app-counters-main"
       [player]="appStateService.rivalData"
     ></app-counters-main>
     <app-options-button
@@ -30,5 +12,25 @@
   <app-life-points-big
     class="app-life-points-big"
     [player]="appStateService.rivalData"
+  ></app-life-points-big>
+
+  <section class="mid-section">
+    <app-dice></app-dice>
+    <app-reset-game></app-reset-game>
+  </section>
+
+  <section class="player-top-section">
+    <app-counters-main
+      class="app-counters-main"
+      [player]="appStateService.myData"
+    ></app-counters-main>
+    <app-options-button
+      class="app-options-button"
+      [player]="appStateService.myData"
+    ></app-options-button>
+  </section>
+  <app-life-points-big
+    class="app-life-points-big"
+    [player]="appStateService.myData"
   ></app-life-points-big>
 </section>
