@@ -10,4 +10,6 @@
   border-radius: 25%;
   font-size: 20px;
   font-weight: bold;
+  -webkit-user-select: none;
+  user-select: none;
 }
