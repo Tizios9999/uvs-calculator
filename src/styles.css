@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 html, body { height: 100%; }
-body { margin: 0 auto; font-family: "Chakra Petch", sans-serif; max-width: 600px; background-color: #2f3637; text-align: center; color: white;
+body { margin: 0 auto; font-family: "Chakra Petch", sans-serif; max-width: 600px; background-color: #2f3637; text-align: center; color: white; box-sizing: border-box;
   -webkit-user-select: none;
   user-select: none; }
 
