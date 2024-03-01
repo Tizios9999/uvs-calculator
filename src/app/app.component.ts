@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MainComponent } from './main/main.component';
@@ -14,10 +14,16 @@ import { AppStateService } from './app-state.service';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   constructor(public appStateService: AppStateService) {
   }
   title = 'Uvs Calculator';
+
+  ngOnInit(): void {
+    if ('wakeLock' in navigator && 'request' in (navigator as any).wakeLock) {
+        (navigator as any).wakeLock.request('screen');
+    }
+  }
 
   setPage(pageName: string) {
     this.appStateService.setCurrentPage(pageName)
