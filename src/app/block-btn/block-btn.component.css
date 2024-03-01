@@ -1,6 +1,18 @@
-button {
+div {
   height: 100%;
   flex: 1;
+  display: flex;
   width: 100%;
   font-size: 24px;
+  color: whitesmoke;
+  background-color: royalblue;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+  border: 2px solid white;
+  text-shadow:
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
 }

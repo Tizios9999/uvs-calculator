@@ -6,7 +6,19 @@
 }
 
 .plus-minus-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50%;
   width: 100%;
   font-size: 36px;
+  color: whitesmoke;
+  background-color: royalblue;
+  border-radius: 1px;
+  border: 1px solid white;
+  text-shadow:
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;
 }

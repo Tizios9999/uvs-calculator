@@ -1,7 +1,7 @@
 .life-ctr {
   height: 100%;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: calc(75% - 2px) calc(25% - 2px); /* Calcola le larghezze in base alla dimensione totale della griglia */
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
